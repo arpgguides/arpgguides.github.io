@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Target keyword: phantom blade zero boss guide | Search intent: find the boss roster, which fights are optional, and what each one asks of you -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phantom Blade Zero Boss Guide: 19 Fights, Weaknesses and Strategies</title>
+<meta name="description" content="Phantom Blade Zero boss guide covering 19 encounters, elemental weaknesses, phase changes, optional bosses and reliable strategies. Sources checked November 12, 2026.">
+<link rel="canonical" href="https://arpgguides.com/phantom-blade-zero-boss-guide/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ARPGguides">
+<meta property="og:url" content="https://arpgguides.com/phantom-blade-zero-boss-guide/">
+<meta property="og:title" content="Phantom Blade Zero Boss Guide: 19 Fights, Weaknesses and Strategies">
+<meta property="og:description" content="Nineteen boss encounters, game-data elemental weaknesses, optional fights and practical strategies, with sources.">
+<meta property="og:image" content="https://arpgguides.com/img/phantom-blade-zero-conical-hat-boss-shrine.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" as="image" href="/img/phantom-blade-zero-conical-hat-boss-shrine.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07090a;
+  --panel:#101416;
+  --line:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.05);
+  --ink:#ece7dd;
+  --ink-dim:#b6b0a4;
+  --muted:#8a857c;
+  --accent:#c23a3a;
+  --max:880px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,video{max-width:100%;display:block}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(194,58,58,.45);transition:border-color .2s,color .2s}
+a:hover{color:#fff;border-bottom-color:var(--accent)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;height:76vh;min-height:520px;max-height:780px;
+  display:flex;align-items:flex-end;overflow:hidden;
+  border-bottom:1px solid var(--line);background:#050607;
+}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(7,9,10,.30) 0%,rgba(7,9,10,.55) 45%,rgba(7,9,10,.97) 100%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;padding:0 24px 54px}
+.eyebrow{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  font-weight:600;font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.14;
+  margin:0 0 18px;letter-spacing:.004em;color:#fff;
+}
+.updated{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+
+/* ---------- layout ---------- */
+main{max-width:var(--max);margin:0 auto;padding:0 24px 24px}
+
+.answer-box{
+  margin:-44px 0 56px;padding:28px 30px;position:relative;z-index:3;
+  background:linear-gradient(180deg,#111618,#0b0f11);
+  border:1px solid var(--line);border-left:3px solid var(--accent);
+  box-shadow:0 24px 60px rgba(0,0,0,.55);
+}
+.answer-box p{margin:0 0 15px;font-size:16.5px}
+.answer-box p:last-child{margin-bottom:0}
+.answer-box strong{color:#fff}
+
+h2{
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  font-weight:600;font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.25;
+  margin:64px 0 8px;padding-top:22px;border-top:1px solid var(--line);
+  position:relative;color:#fff;
+}
+h2::before{content:"";position:absolute;top:-1px;left:0;width:64px;height:1px;background:var(--accent)}
+h3{
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  font-size:1.22rem;margin:34px 0 8px;color:#fff;font-weight:600;
+}
+p{margin:0 0 18px;color:var(--ink-dim)}
+strong{color:#fff;font-weight:600}
+em{color:var(--ink);font-style:italic}
+
+ul,ol{padding-left:20px;margin:0 0 24px;color:var(--ink-dim)}
+li{margin:0 0 12px}
+li strong{color:#fff}
+
+/* ---------- tables ---------- */
+.table-wrap{overflow-x:auto;margin:0 0 26px;border:1px solid var(--line);background:#0a0d0f}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:720px}
+thead th{
+  text-align:left;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;padding:14px 16px;background:#0c1012;
+  border-bottom:1px solid var(--line);white-space:nowrap;
+}
+tbody td{padding:14px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--ink-dim)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:rgba(255,255,255,.022)}
+tbody td:first-child{color:var(--ink)}
+tbody td strong{color:#fff}
+.tbl-note{font-size:12.5px;color:var(--muted);margin:-14px 0 26px;line-height:1.65}
+
+/* ---------- media ---------- */
+figure{margin:38px 0}
+figure img,figure video{
+  width:100%;height:auto;border:1px solid var(--line);background:#0b0e10;
+}
+figure video{aspect-ratio:16/9;object-fit:cover}
+figure video.clip{width:min(100%,560px);margin:0 auto;border:1px solid var(--line)}
+.figcap{font-size:12.5px;color:var(--muted);margin:10px 0 0;line-height:1.65;letter-spacing:.02em}
+
+/* ---------- footer ---------- */
+footer{max-width:var(--max);margin:24px auto 0;padding:36px 24px 80px;border-top:1px solid var(--line)}
+footer h2{font-size:1.15rem;border-top:0;padding-top:0;margin:0 0 14px}
+footer h2::before{display:none}
+footer ul{font-size:13.5px;line-height:1.7}
+footer p{font-size:14px;color:var(--muted)}
+.credit{font-size:12.5px;color:var(--muted);margin-top:26px;border-top:1px solid var(--line-soft);padding-top:16px}
+
+@media (max-width:700px){
+  body{font-size:16px}
+  .hero{min-height:64vh;background:url("../img/phantom-blade-zero-conical-hat-boss-shrine.webp") center/cover no-repeat}
+  .hero-video{display:none}
+  .answer-box{margin:-30px 0 40px;padding:22px 20px}
+  h2{margin-top:48px}
+  footer{padding-bottom:56px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-video{display:none}
+  .hero{background:url("../img/phantom-blade-zero-conical-hat-boss-shrine.webp") center/cover no-repeat}
+}
+
+/* ---------- guide nav + related cards ---------- */
+.guide-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:0 0 20px;padding:0 0 12px;border-bottom:1px solid var(--line);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;line-height:1.6}
+.guide-nav a{color:var(--muted);border-bottom:1px solid transparent;padding-bottom:2px}
+.guide-nav a:hover{color:#fff;border-bottom-color:var(--accent)}
+.related{margin:66px 0 0;padding:26px 0 0;border-top:1px solid var(--line)}
+.related h2{margin:0 0 20px;padding-top:0;border-top:0;font-size:clamp(1.45rem,3.1vw,1.95rem)}
+.related h2::before{display:none}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.related-card{display:block;height:100%;padding:20px 20px 22px;border:1px solid var(--line);background:var(--panel);transition:border-color .2s,background .2s,transform .2s}
+.related-card:hover{border-color:rgba(255,255,255,.3);background:#121618;transform:translateY(-2px)}
+.related-card b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.16rem;font-weight:600;line-height:1.24;color:#fff;margin:0 0 9px}
+.related-card span{display:block;font-size:13.5px;line-height:1.6;color:var(--muted)}
+@media (max-width:700px){.related-grid{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://arpgguides.com/"},{"@type":"ListItem","position":2,"name":"Phantom Blade Zero boss guide","item":"https://arpgguides.com/phantom-blade-zero-boss-guide/"}]}
+</script>
+</head>
+<body>
+
+<header class="hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="../img/phantom-blade-zero-bronze-mask-child-closeup.webp" aria-hidden="true" tabindex="-1">
+    <source src="../img/pbz-1-h264.mp4" type="video/mp4">
+  </video>
+  <div class="hero-inner">
+    <nav class="guide-nav" aria-label="Phantom Blade Zero guides">
+    <a href="/">Phantom Blade Zero guides</a>
+    <a href="/phantom-blade-zero-release-date/">Release date</a>
+    <a href="/phantom-blade-zero-best-weapons/">Best weapons</a>
+    <a href="/phantom-blade-zero-demo/">Demo</a>
+    <a href="/phantom-blade-zero-ps5/">PS5</a>
+    <a href="/phantom-blade-zero-review/">Review</a>
+    </nav>
+    <p class="eyebrow">Boss guide · 19 encounters covered</p>
+    <h1>Phantom Blade Zero Boss Guide: Weaknesses and Strategies</h1>
+    <p class="updated">Last updated: 2026-11-12</p>
+  </div>
+</header>
+
+<main>
+
+<div class="answer-box">
+<p><strong>Phantom Blade Zero has at least 50 bosses</strong>, according to director Liang Qiwei. A separate data-extraction database catalogs <strong>74 boss entries</strong>, but includes additional forms and phases, so 74 is not a verified count of distinct characters. (<a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer, October 9, 2026</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot game-data index</a>)</p>
+<p><strong>Story-required encounters and optional challenges serve different purposes.</strong> Some optional fights unlock specific weapons, Phantom Edges or quest outcomes, and certain side objectives contribute to the Perfect Ending. The five Lóng Pillar trials culminate in a fifth fight named <strong>Mó Yuan, Leader of the Bastion of Mó</strong>; it is a demanding counter-focused encounter, not a proven winner of any universal difficulty ranking. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-mo-yuan-leader-of-the-bastion-of-mo" rel="noopener">Mobalytics, November 10, 2026</a>)</p>
+<p><strong>What this guide covers:</strong> 11 featured encounters with weakness data and fight tactics, plus eight further bosses in a quick-reference table. An elemental value shown below comes from a third-party extraction of PC build 26367565; <strong>“no extra weakness listed” means the database shows no above-normal elemental damage multiplier</strong>, not that the boss is immune to elemental attacks.</p>
+</div>
+
+<figure>
+<img src="../img/phantom-blade-zero-conical-hat-boss-shrine.webp" alt="Phantom Blade Zero boss in a wide conical iron hat leaning forward inside a red-lit shrine" width="1920" height="1080">
+<p class="figcap">Encounter staging is consistent across the roster: a lit arena, a reveal, then the first exchange. Art: official capture, retrieved 2026-11-12.</p>
+</figure>
+
+<h2>How many bosses are there in Phantom Blade Zero?</h2>
+<p>There is no single developer-published completion checklist. Director Liang Qiwei stated that the game has at least 50 bosses, reasoning from 30 main weapons and more than 20 secondary weapons, each acquired through a boss. (<a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer developer interview, October 9, 2026</a>)</p>
+<p>The <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot boss index</a> has <strong>74 entries</strong> extracted from PC game files, but counts separate forms and phases. Regional walkthroughs may use smaller encounter counts. Never equate one database row with one distinct boss identity.</p>
+<ul>
+<li><strong>Rematches:</strong> The Hunt appears in an early confrontation and later in a Sixfold Scythe battle.</li>
+<li><strong>Multiple forms:</strong> Bai Chilian and Mu Xiaokui have separate encounter phases or entries.</li>
+<li><strong>Conditional content:</strong> the Iron Fiend and Jade Dancer phase requires completing Mu Xiaokui's five-ribbon Tale.</li>
+</ul>
+<p>This article is a curated guide to 19 encounters, <strong>not a complete all-boss checklist</strong>. (MetaBot boss index; <a href="https://www.method.gg/phantom-blade-zero/phantom-blade-zero-how-to-beat-mu-xiaokui-and-jade-dancer-iron-fiend" rel="noopener">Method.gg, November 4, 2026</a>)</p>
+
+<h2>Common boss-fight mechanics</h2>
+<h3>1. The colour code on incoming attacks</h3>
+<p><strong>Blue flash:</strong> block at the moment of impact for a parry or perfect deflect. <strong>Red flash:</strong> use a timed dodge or Ghoststep response; ordinary blocking and parrying do not stop these attacks. <strong>Smoky-black / grey attacks:</strong> do not assume a normal parry will work; evade or create space according to the attack animation. Read the timing from the move itself rather than the colour alone. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-combat" rel="noopener">Mobalytics combat guide</a>; <a href="https://allthings.how/phantom-blade-zero-how-to-parry/" rel="noopener">All Things How, October 29, 2026</a>)</p>
+
+<h3>2. Sha-Chi governs guard breaks and offense</h3>
+<p>Blocking and heavier actions consume Sha-Chi, while attacking and well-timed defense help manage the exchange. An effective weapon swap can replenish Sha-Chi when two main weapons are available. If your guard meter breaks, the next combo can be dangerous; look for a clean counter before attempting an extended punish. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-combat" rel="noopener">Mobalytics combat guide</a>)</p>
+
+<figure>
+<img src="../img/phantom-blade-zero-parry-sparks-rain-courtyard.webp" alt="Phantom Blade Zero Soul in a rain-soaked courtyard as sparks burst between his blade and a leaping attacker" width="1920" height="1080">
+<p class="figcap">The parry is the turn-taking mechanic: it converts an incoming string into your damage window. Art: official capture, retrieved 2026-11-12.</p>
+</figure>
+
+<h3>3. Later phases can have their own retry checkpoints</h3>
+<p>Several documented two-phase encounters, including Blaze, have a checkpoint after the first phase: dying in phase two does not require replaying phase one. Follow fight-specific guidance rather than assuming every scripted battle works this way. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-blaze-phosphor-consciousness" rel="noopener">Mobalytics Blaze guide</a>)</p>
+
+<h3>4. Defeated ordinary enemies do not respawn for farming</h3>
+<p>The director said the game is built to favor exploration rather than repeatedly defeating the same enemies for drops. If a boss proves difficult, explore accessible side paths for gear and upgrades; weapon upgrade investment can be reassigned. (<a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer, October 9, 2026</a>)</p>
+
+<h2>Phantom Blade Zero boss list: 11 featured encounters</h2>
+<p>These 11 featured encounters are grouped by main-story progression first, then optional challenges. Region names are more reliable than chapter numbers because different walkthroughs count Tales and regions differently. The weakness column reports the <em>highest extra elemental damage</em> shown by <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot PC game-data extraction</a> (build 26367565), rather than an officially recommended weapon.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Boss</th><th>Region / encounter</th><th>Weakness</th><th>Skippable</th><th>Key mechanic</th></tr></thead>
+<tbody>
+<tr><td><strong>Zuo Shang, the Order&#x27;s Shadow Sovereign</strong></td><td>Prologue · Diverging Paths</td><td>Lightning +16%</td><td>No</td><td>Scripted opening encounter; a different Zuo Shang variant appears later.</td></tr>
+<tr><td><strong>The Hunt, Hunter of the Order</strong></td><td>Prologue / Weeping Creek Valley; later Sixfold Scythe</td><td>Lightning +30%</td><td>No</td><td>Two-stage progression confrontation; later defeat awards Hunter's Chain Sickle.</td></tr>
+<tr><td><strong>Jagged Steel, the Frenzied Brute</strong></td><td>Weeping Creek Valley</td><td>Lightning +16%</td><td>No</td><td>Practice parrying; gains additional moves as HP decreases; drops Jagged Steel.</td></tr>
+<tr><td><strong>Peng Meng, the Axemaster</strong></td><td>Weeping Creek Valley</td><td>Poison +30%</td><td>No</td><td>Slow axe swings; dodge non-blockable tells; rewards Dread Axe.</td></tr>
+<tr><td><strong>Bai Chilian, Lady of the Twin Serpents</strong></td><td>Crimson Forest</td><td>Fire +16% (both forms)</td><td>No</td><td>Two phases: grounded pressure, then aerial attacks; drops White Serpent &amp; Crimson Viper.</td></tr>
+<tr><td><strong>Hua Qianxiao, the Sword Fanatic</strong></td><td>Crimson Forest · Pangzhen Bridge</td><td>Lightning +16%</td><td>No</td><td>One phase with a drinking-powered state; drops The Fanatic's Broken Blade.</td></tr>
+<tr><td><strong>Iron Fiend and Jade Dancer</strong></td><td>Village of Lu · Mu Xiaokui hidden phase</td><td>Iron Fiend: no bonus listed; Jade Dancer: Lightning +30%</td><td>Conditional</td><td>Only appears after the five-ribbon Tale; rewards include Fiend Saws.</td></tr>
+<tr><td><strong>Wu Lengshuang, the Soft Sword</strong></td><td>Mandate Encampment · The Confinement</td><td>No extra elemental bonus listed</td><td>Yes</td><td>Purple parry flash punishes overlong combos; drops Soft Snake Sword.</td></tr>
+<tr><td><strong>Chief Disciple of the Seven-Stars Formation</strong></td><td>Mandate Encampment · Tower Rear Exit</td><td>First form: no bonus; Sword of Despair: Fire +16%</td><td>Yes</td><td>Two phases; Red can join the second phase if previously spared.</td></tr>
+<tr><td><strong>The One-Eyed Archer</strong></td><td>Meigu Lake · One-Eyed Isle</td><td>No extra elemental bonus listed</td><td>Yes</td><td>Ranged arrows, fast melee and Crimson Eye lasers; drops One-Eyed Bow.</td></tr>
+<tr><td><strong>The Gold-Masked One / Mó Yuan</strong></td><td>Five Lóng Pillar trials</td><td>No extra elemental bonus listed; Bleed helps in early trials</td><td>Yes</td><td>Counter-focused trial chain; fifth opponent is Mó Yuan, one health bar.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="tbl-note">Source: <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot boss stats</a> and its <a href="https://metabot.gg/en/phantom-blade-zero/methodology" rel="noopener">data methodology</a> (PC build 26367565). +16% and +30% refer to the extracted elemental damage multiplier, not a blanket damage bonus to every move. A dash or “no bonus listed” does not imply immunity. Conditional status means the encounter can be missed even though the underlying story boss is required.</p>
+
+<h3>Zuo Shang, the Order's Shadow Sovereign</h3>
+<p>The prologue confrontation functions as an opening lesson in defense, and its outcome advances the story. The encounter is separate from later Zuo Shang variants on the ending route, so their HP, moves and weaknesses should not be merged. The PC data index assigns this prologue variant <strong>Lightning +16%</strong> as its highest elemental modifier. (<a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot game data</a>)</p>
+
+<h3>The Hunt, Hunter of the Order</h3>
+<p>The Hunt returns in the Weeping Creek Valley battle as <strong>The Hunt, Sixfold Scythe</strong>. His complete encounter uses two stages, including extended chains and aerial pressure; the Great Waterfall encounter is on the regional progression path and yields <strong>Hunter's Chain Sickle</strong>. Counter the flash-marked end of a string rather than trading hits mid-combo. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-hunt-hunter-of-the-order" rel="noopener">Mobalytics fight guide</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-weeping-creek-valley-collectibles" rel="noopener">Weeping Creek Valley route</a>)</p>
+
+<h3>Jagged Steel, the Frenzied Brute</h3>
+<p>Jagged Steel is an early parry lesson and awards the <strong>Jagged Steel</strong> weapon. Its encounter has a continuous health bar; the move list expands as its HP drops, which should not be mistaken for a separate resettable second health bar. Practice the blue-flash parry and keep attacks short while learning each response. The extracted elemental weakness is <strong>Lightning +16%</strong>. (<a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot game data</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-weeping-creek-valley-collectibles" rel="noopener">Mobalytics regional route</a>)</p>
+
+<h3>Peng Meng, the Axemaster</h3>
+<p>Peng Meng's heavy axe swings invite premature counters; wait for the complete strike before committing. His extracted data shows <strong>Poison +30%</strong> as the largest extra elemental damage modifier. Defeating him in the Weeping Creek Valley rewards the <strong>Dread Axe</strong> Phantom Edge. A large guard-break window is safer than repeatedly trading into his axe. (<a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot game data</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-weeping-creek-valley-collectibles" rel="noopener">Mobalytics regional route</a>)</p>
+
+<h3>Bai Chilian, Lady of the Twin Serpents</h3>
+<p>She has <strong>two distinct phases</strong>. The first emphasizes grounded melee and serpent attacks; the second emphasizes airborne movement, spinning attacks and readable red/blue counter windows. Her second form is called <strong>Bai Chilian, the Sacrificial Serpent</strong> in the game-data index. Both forms show <strong>Fire +16%</strong>. Winning yields <strong>White Serpent &amp; Crimson Viper</strong>. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-bai-chilian-the-sacrificial-serpent" rel="noopener">Mobalytics phase guide</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot game data</a>)</p>
+
+<h3>Hua Qianxiao, the Sword Fanatic</h3>
+<p>Hua Qianxiao has <strong>one health-bar phase with two combat states</strong>. When he drinks he can gain a temporary shield and a more dangerous moveset; a poorly timed rush gets pushed away. Take distance during a protected drink, watch the shield return to Sha-Chi and punish when the meter drains. An unguarded drink can be interrupted with Dread Axe. The extracted elemental weakness is <strong>Lightning +16%</strong>. The reward is <strong>The Fanatic's Broken Blade</strong>. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-hua-qianxiao-the-sword-fanatic" rel="noopener">Mobalytics fight guide</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot stats</a>)</p>
+
+<h3>Iron Fiend and Jade Dancer</h3>
+<p>This duo is the <strong>conditional third phase of Mu Xiaokui's mandatory Village of Lu fight</strong>. Collect all five ribbons in the <em>Young Mistress</em> Tale before entering the final encounter or this fight, and its <strong>Fiend Saws</strong> reward, may be missed. Focus damage on the opponent you can safely stagger while keeping the other in view; credible guides do not establish a universal kill-first order. MetaBot lists <strong>Lightning +30%</strong> for Jade Dancer and no extra elemental modifier for Iron Fiend. (<a href="https://www.method.gg/phantom-blade-zero/phantom-blade-zero-how-to-beat-mu-xiaokui-and-jade-dancer-iron-fiend" rel="noopener">Method.gg strategy</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-village-of-lu-collectibles" rel="noopener">Mobalytics ribbon/reward route</a>)</p>
+
+<figure>
+<video class="clip" controls muted loop playsinline preload="metadata" poster="../img/phantom-blade-zero-straw-hat-duel-hud.webp">
+  <source src="../img/pbz-5-h264.mp4" type="video/mp4">
+</video>
+<p class="figcap">A duel with the combat HUD up: two equipped mains at the bottom right, the swap that refills Sha-Chi. Footage: official capture, 2026-11-12.</p>
+</figure>
+
+<h3>Wu Lengshuang, the Soft Sword</h3>
+<p>Wu Lengshuang is an optional, <strong>single-phase</strong> counter specialist. A <strong>purple flash</strong> means she has parried your offense: stop the combo, then respond to her follow-up by its colour. Her two-handed wind-up can lead into a broad spinning slash; dodge it and punish the recovery rather than attacking into the setup. The Soft Snake Sword is the reward. MetaBot lists <strong>no above-normal elemental damage modifier</strong> for this fight. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-wu-lengshuang-the-soft-sword" rel="noopener">Mobalytics strategy</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot stats</a>)</p>
+
+<h3>Chief Disciple of the Seven-Stars Formation</h3>
+<p>The formation encounter has <strong>two phases</strong>: first the disciple group, then the Chief Disciple's <strong>Sword of Despair</strong> form. <strong>Red, the Mysterious Swordswoman</strong> joins phase two if you spared her at the earlier Dovecote rooftop encounter. Killing Red early can lock out quest rewards, so completion-focused players should leave by the hanging chain instead. The extracted elemental table lists no extra bonus in phase one and <strong>Fire +16%</strong> for Sword of Despair. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-chief-disciple-of-the-seven-stars-formation" rel="noopener">Mobalytics encounter guide</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot stats</a>)</p>
+
+<h3>The One-Eyed Archer</h3>
+<p>This optional boss occupies the eastern island of Meigu Lake. His arrows and red targeting line punish a straight-line approach: move laterally, and dodge on the <strong>actual shot release</strong> rather than at the first sight of the aiming line. In the later part of this <strong>single-phase</strong> fight, the Crimson Eye laser barrage is easier to read near the arena's outer edge; jump or dodge through openings. Victory awards the <strong>One-Eyed Bow</strong> Phantom Edge. The data table shows no extra elemental damage modifier. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-one-eyed-archer" rel="noopener">Mobalytics strategy</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot stats</a>)</p>
+
+<h3>The Gold-Masked One</h3>
+<p>The five optional <strong>Lóng Pillar</strong> trials are tied to the <em>Bloodline Awakening</em> storyline. The first four battles use <strong>The Gold-Masked One</strong> name; the fifth opponent is shown as <strong>Mó Yuan, Leader of the Bastion of Mó</strong>. The masked man and Mó Yuan are linked by the reveal, but the individual trials remain separate entries in the encounter index. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-mo-yuan-leader-of-the-bastion-of-mo" rel="noopener">Mobalytics fifth-trial guide</a>; <a href="https://phantomblade.exputer.com/characters/mo-yuan" rel="noopener">Mó Yuan character entry</a>)</p>
+<p>The core rule is <strong>counter first, then damage</strong>: successful blue-flash parries, red-flash perfect dodges and Sha-Chi breaks open his defense. PC Gamer recommends Jagged Steel to apply <strong>Bleed</strong> during the early Gold-Masked One encounter. Mó Yuan's final duel has <strong>one health bar</strong> and longer, faster attack sequences. The extracted data lists no enhanced elemental damage multiplier for these two boss entries. Their difficulty is high, but an unqualified claim that they rank number one in player polls is unsupported. (<a href="https://www.pcgamer.com/games/action/phantom-blade-zero-gold-masked-one-boss-guide/" rel="noopener">PC Gamer, October 29, 2026</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-mo-yuan-leader-of-the-bastion-of-mo" rel="noopener">Mobalytics, November 10, 2026</a>)</p>
+
+<h2>Which bosses can you skip?</h2>
+<p>The mandatory story route contains fights that must be won to progress. Other bosses are optional, and some encounters are <strong>conditional</strong> rather than simply skippable. For instance, Iron Fiend and Jade Dancer only appear after the five-ribbon Tale is completed before Mu Xiaokui. The Lóng Pillar series is optional for a basic completion but matters for the Perfect Ending route.</p>
+<ol>
+<li><strong>Rewards vary by boss.</strong> Many named fights give a weapon, Phantom Edge or quest item; do not assume every optional boss drops a unique item without checking its specific reward list.</li>
+<li><strong>Defeated enemies do not respawn for routine farming.</strong> The director describes an exploration-first progression model; look for unopened routes and available upgrades instead of assuming a repeatable material farm. (<a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer interview</a>)</li>
+<li><strong>Missable content is the main reason to plan.</strong> Finish relevant Tale steps before the boss that closes them, especially Mu Xiaokui's ribbons and Red's Mandate Encampment quest line. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-chief-disciple-of-the-seven-stars-formation" rel="noopener">Mobalytics: Red</a>; <a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-village-of-lu-collectibles" rel="noopener">Mobalytics: Village of Lu</a>)</li>
+</ol>
+<p>For a completionist route, clear available Tales and optional bosses before major story transitions, and check any explicitly missable rewards before entering a chapter-ending arena.</p>
+
+<figure>
+<img src="../img/phantom-blade-zero-blue-haired-woman-crown.webp" alt="Phantom Blade Zero pale blue-haired woman in a jewelled gold crown with her eyes lowered" width="1920" height="1080">
+<p class="figcap">Optional encounters get the same staged reveal as story bosses. Art: official capture, retrieved 2026-11-12.</p>
+</figure>
+
+<h2>Eight more bosses: locations and fight mechanics</h2>
+<p>These bosses also appear in published post-launch lists and walkthroughs. The notes below give reliable encounter features rather than speculative health pools or one-size-fits-all counter weapons. This is a supplementary quick reference; it does not complete the full boss roster.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Boss</th><th>Region</th><th>What to prepare for</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Jing Ye, the Outlaw</strong></td><td>Crimson Forest</td><td>Three phases: mounted combat, shield defense, then swordplay. Keep space to read his transitions.</td><td><a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-jing-ye-the-outlaw" rel="noopener">Mobalytics</a></td></tr>
+<tr><td><strong>Stone Hand Iron Fever</strong></td><td>Crimson Forest · Mirrorwood Entrance</td><td>Close-range combo pressure; a stronger Perfectly Transcended state starts at about 65–70% HP (guide estimate).</td><td><a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-stone-hand-iron-fever" rel="noopener">Mobalytics</a></td></tr>
+<tr><td><strong>Zhuo Bi, the Gatekeeper</strong></td><td>Village of Lu</td><td>Shield defense and guard-breaking; winning awards the Bastion Phantom Edge.</td><td><a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">Game-data list</a></td></tr>
+<tr><td><strong>Master Bi Yuan</strong></td><td>Village of Lu</td><td>Fast sword attacks and ranged sword-energy pressure. Prioritize complete strings and guard-break openings.</td><td><a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">Game-data list</a></td></tr>
+<tr><td><strong>Master Bi Hai</strong></td><td>Village of Lu</td><td>Defensive bell/temple mechanics; separate summoned threats from the main opening.</td><td><a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">Game-data list</a></td></tr>
+<tr><td><strong>Yuzan, No. 3 Musician Puppet</strong></td><td>Village of Lu</td><td>Music-driven ranged pressure and projectiles; defeating Yuzan awards Heartrend Pipa.</td><td><a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-village-of-lu-collectibles" rel="noopener">Mobalytics</a></td></tr>
+<tr><td><strong>Mu Xiaokui</strong></td><td>Village of Lu</td><td>Mandatory story fight with two normal stages; a third Iron Fiend/Jade Dancer stage requires all five ribbons.</td><td><a href="https://www.method.gg/phantom-blade-zero/phantom-blade-zero-how-to-beat-mu-xiaokui-and-jade-dancer-iron-fiend" rel="noopener">Method.gg</a></td></tr>
+<tr><td><strong>Blaze, Shadow Warden Captain</strong></td><td>Pangzhen · Town of Death</td><td>Two phases: chained meteor hammers, then the faster Phosphor Consciousness form with fire pressure.</td><td><a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-blaze-phosphor-consciousness" rel="noopener">Mobalytics</a></td></tr>
+</tbody></table></div>
+<p class="tbl-note">The table above preserves each boss's known region and distinguishing mechanic; it does not assert exact HP, a universally best weapon, or unconfirmed damage thresholds.</p>
+<h2>How to interpret the elemental weakness data</h2>
+<p>The percentages in the 11-boss table are reported by <a href="https://metabot.gg/en/phantom-blade-zero/methodology" rel="noopener">MetaBot&#39;s methodology page</a> from PC game build <strong>26367565</strong>. The site identifies the game data tables it exported, but we have not independently reproduced that extraction. This is a <strong>third-party game-data claim</strong> and can differ across builds. These modifiers concern elemental <em>damage taken</em> and are not the same as status buildup (such as Bleed) or combat vulnerabilities (such as a shield broken by a particular Phantom Edge).</p>
+<p>Where no extra elemental modifier appears, the article says <strong>“no extra elemental bonus listed.”</strong> For these bosses, timing your parries, dodges and guard breaks remains the actionable guidance. A precise health total or phase-transition threshold is only included where the cited source identifies how it was measured.</p>
+
+<h2>Phantom Blade Zero boss FAQ</h2>
+<h3>How many bosses does Phantom Blade Zero have?</h3>
+<p>At least 50 according to director Liang Qiwei. A third-party game-data index lists 74 entries including separate phases and forms, which is not the same as 74 unique characters. (<a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer</a>; <a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot</a>)</p>
+
+<h3>Who is the hardest boss?</h3>
+<p>There is no reliable universal difficulty ranking. The optional Lóng Pillar chain is a well-documented challenge: the first four opponents are named The Gold-Masked One, and the fifth is named Mó Yuan. The Mó Yuan duel has one health bar. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-mo-yuan-leader-of-the-bastion-of-mo" rel="noopener">Mobalytics</a>)</p>
+
+<h3>Can you skip bosses?</h3>
+<p>Many optional fights can be skipped, but some rewards or Tales can be missed. Chapter-required bosses block progression; the Iron Fiend/Jade Dancer hidden phase is conditional on five ribbons, and the Lóng Pillars contribute to the Perfect Ending path. (<a href="https://www.method.gg/phantom-blade-zero/phantom-blade-zero-how-to-beat-mu-xiaokui-and-jade-dancer-iron-fiend" rel="noopener">Method.gg</a>)</p>
+
+<h3>Do you refight a boss from phase one?</h3>
+<p>For documented multi-phase encounters such as The Hunt and Blaze, the later phase has its own retry checkpoint. This should not be generalized to every scripted sequence or difficulty without a fight-specific source. (<a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-blaze-phosphor-consciousness" rel="noopener">Mobalytics</a>)</p>
+
+<h3>Is there a boss rush or refight mode?</h3>
+<p><strong>No dedicated Boss Rush or boss-select refight mode is confirmed as of November 12, 2026.</strong> Steam community moderators acknowledged requests for the feature and said they could not confirm future plans. The replayability of individual story encounters should not be confused with a separate Boss Rush mode. (<a href="https://steamcommunity.com/app/4115450/discussions/0/572680221973698779/" rel="noopener">Steam discussion, November 9, 2026</a>)</p>
+
+<section class="related" aria-labelledby="related-guides">
+<h2 id="related-guides">Related Phantom Blade Zero guides</h2>
+<div class="related-grid">
+<a class="related-card" href="/phantom-blade-zero-best-weapons/"><b>Phantom Blade Zero best weapons</b><span>Seventeen weapons ranked, with the drops named on this page and the builds that last to the credits.</span></a>
+<a class="related-card" href="/phantom-blade-zero-review/"><b>Phantom Blade Zero review roundup</b><span>The Metacritic and OpenCritic spread, the scores that split, and what critics say about boss design.</span></a>
+<a class="related-card" href="/phantom-blade-zero-release-date/"><b>Phantom Blade Zero release date</b><span>Launch day, platforms, editions and US pricing, checked against the live store listings.</span></a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<h2>Sources and dates checked</h2>
+<ul>
+<li><a href="https://www.4gamer.net/games/709/G070944/20261006038/" rel="noopener">4Gamer — Liang Qiwei interview</a> (published October 9, 2026): at least 50 bosses, weapon drops, encounter philosophy and no standard enemy respawning.</li>
+<li><a href="https://metabot.gg/en/phantom-blade-zero/bosses" rel="noopener">MetaBot — boss stats and game-data index</a> and <a href="https://metabot.gg/en/phantom-blade-zero/methodology" rel="noopener">extraction methodology</a> (checked November 12, 2026): 74 entries including forms and phases; weakness modifiers from PC build 26367565. Extraction not independently reproduced here.</li>
+<li><a href="https://mobalytics.gg/gamebase/guides/phantom-blade-zero-bosses" rel="noopener">Mobalytics — boss guide index</a> (individual guides updated October 31–November 10, 2026): documented attack patterns, phases, placement, optional encounter mechanics and fight strategies.</li>
+<li><a href="https://www.pcgamer.com/games/action/phantom-blade-zero-gold-masked-one-boss-guide/" rel="noopener">PC Gamer — Gold-Masked One guide</a> (October 29, 2026): counter-only damage windows and an early-trial Bleed recommendation.</li>
+<li><a href="https://www.method.gg/phantom-blade-zero/phantom-blade-zero-how-to-beat-mu-xiaokui-and-jade-dancer-iron-fiend" rel="noopener">Method.gg — Mu Xiaokui and hidden guardians</a> (November 4, 2026): three-stage encounter, conditional ribbon requirement and concentration of damage on one guardian.</li>
+<li><a href="https://steamcommunity.com/app/4115450/discussions/0/572680221973698779/" rel="noopener">Steam Community — boss-rush feature request</a> (November 9, 2026): moderator response states that feedback was forwarded; no future feature confirmed.</li>
+</ul>
+<p><strong>Data checked: November 12, 2026.</strong> This guide distinguishes developer statements, independently written combat walkthroughs, and third-party extraction of game assets. It does not supply guessed health values, unsupported difficulty-poll rankings or universal counter weapons where no dependable evidence exists.</p>
+<p><a href="/">Phantom Blade Zero guides</a> · <a href="/phantom-blade-zero-best-weapons/">Phantom Blade Zero best weapons</a> · <a href="/phantom-blade-zero-review/">Phantom Blade Zero review roundup</a> · <a href="/phantom-blade-zero-release-date/">Phantom Blade Zero release date</a></p>
+
+<p class="credit">Key art, screenshots and video clips: official Phantom Blade Zero site (pbz.s-game.cn), retrieved 2026-11-12, used for editorial coverage of the game. All trademarks remain with their owners.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many bosses does Phantom Blade Zero have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Director Liang Qiwei said at least 50. One third-party PC game-data index lists 74 entries including separate forms and phases; this is not a verified count of unique bosses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the hardest boss in Phantom Blade Zero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no established universal ranking. The optional five-trial Long Pillar chain culminates in Mó Yuan, a difficult one-health-bar counter-focused encounter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you skip bosses in Phantom Blade Zero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Story-required fights must be completed. Many side bosses are optional, but certain rewards and endings depend on optional or conditional encounters. Iron Fiend and Jade Dancer require five ribbons before Mu Xiaokui."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you restart a boss from phase one when you die?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Documented multi-phase encounters such as Blaze allow retries from the later phase. Check encounter-specific guidance rather than assuming all sequences work identically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a boss rush mode in Phantom Blade Zero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No dedicated boss-rush or boss-select refight mode is confirmed as of November 12, 2026. Moderators acknowledged requests but did not confirm future plans."
+      }
+    }
+  ]
+}
+</script>
+</body>
+</html>
